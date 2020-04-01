@@ -1,0 +1,31 @@
+pipecrowd_db=> \dg
+                                                List of roles
+         Role name         |                         Attributes                         |      Member of
+---------------------------+------------------------------------------------------------+---------------------
+ cloudsqladmin             | Superuser, Create role, Create DB, Replication, Bypass RLS | {}
+ cloudsqlagent             | Create role, Create DB                                     | {cloudsqlsuperuser}
+ cloudsqliamserviceaccount | Cannot login                                               | {}
+ cloudsqliamuser           | Cannot login                                               | {}
+ cloudsqlimportexport      | Create role, Create DB                                     | {cloudsqlsuperuser}
+ cloudsqlreplica           | Replication                                                | {}
+ cloudsqlsuperuser         | Create role, Create DB                                     | {pg_monitor}
+ pipecrowd-admin           | Create role, Create DB                                     | {cloudsqlsuperuser}
+ postgres                  | Create role, Create DB                                     | {cloudsqlsuperuser}
+
+pipecrowd_db=> \du
+                                                List of roles
+         Role name         |                         Attributes                         |      Member of
+---------------------------+------------------------------------------------------------+---------------------
+ cloudsqladmin             | Superuser, Create role, Create DB, Replication, Bypass RLS | {}
+ cloudsqlagent             | Create role, Create DB                                     | {cloudsqlsuperuser}
+ cloudsqliamserviceaccount | Cannot login                                               | {}
+ cloudsqliamuser           | Cannot login                                               | {}
+ cloudsqlimportexport      | Create role, Create DB                                     | {cloudsqlsuperuser}
+ cloudsqlreplica           | Replication                                                | {}
+ cloudsqlsuperuser         | Create role, Create DB                                     | {pg_monitor}
+ pipecrowd-admin           | Create role, Create DB                                     | {cloudsqlsuperuser}
+ postgres                  | Create role, Create DB                                     | {cloudsqlsuperuser}
+
+pipecrowd_db=> \conninfo
+You are connected to database "pipecrowd_db" as user "postgres" on host "35.189.31.152" at port "5432".
+SSL connection (protocol: TLSv1.3, cipher: TLS_AES_256_GCM_SHA384, bits: 256, compression: off)

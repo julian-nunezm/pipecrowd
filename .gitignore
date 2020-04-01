@@ -1,0 +1,5 @@
+.env
+pipecrowd/pipecrowd/__pycache__/
+pipecrowd/wishlist/__pycache__/
+pipecrowd/wishlist/migrations/
+pipecrowd/tools/__pycache__/
